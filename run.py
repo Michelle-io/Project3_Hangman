@@ -40,3 +40,16 @@ def show_game_board(incorrect_guesses, correct_guesses, game_word):
     print()
 
 
+def get_guess(previous_guesses):
+    """ Return players guess"""
+    while True:
+        guess = input('Guess a letter: ').lower()
+
+        if len(guess) != 1 or not guess.isalpha():
+            print('Please enter a single letter.')
+        elif guess in previous_guesses:
+            print("You've already guessed that letter. Choose again.")
+        else:
+            return guess
+
+
