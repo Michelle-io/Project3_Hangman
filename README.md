@@ -55,16 +55,31 @@ The user will then be prompted to enter a letter. If the letter is in the word, 
 
 ---
 
-1. `heroku/python`
-2. `heroku/nodejs`
+## Deployment
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+### Local Deployment
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+Please note that this project requires Python 3.6 or higher to run locally.
 
-Connect your GitHub repository and deploy as normal.
+- Steps to run the project locally.
+  - Fork or clone the repository into directory.
+  - Run the run.py file.
 
-## Constraints
+### Deployment to Heroku
+
+- Steps to deploy the project to Heroku.
+  - Fork or clone the repository.
+  - Create a new app on Heroku.
+  - Set the buildpacks to Python and NodeJS in that order.
+  - Link the Heroku app to the GitHub repository.
+  - Click on deploy.
+
+## Technologies Used
+
+- [Python](https://www.python.org/)
+  - The project uses **Python** to create the game logic.
+
+---
 
 The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
 
