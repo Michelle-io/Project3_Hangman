@@ -80,8 +80,8 @@ Please note that this project requires Python 3.6 or higher to run locally.
   - The project uses **Python** to create the game logic.
 
 ---
+## Credits
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
+- [Kite how to build a hangman game](https://www.youtube.com/watch?v=m4nEnsavl6w)
+- Code Institute - For the mock terminal on Heroku.
+- Random words for game from [hangmanwords](https://www.hangmanwords.com/words)
