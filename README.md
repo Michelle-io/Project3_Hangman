@@ -9,7 +9,13 @@ Users can compete against the hangman and try to guess the correct word before i
 
 ![hangman game mockup](docs/mockup.png)
 
-Welcome USER_NAME,
+## How to play
+
+Hangman Py is based on the classic game of Hangman. The user is first prompted to enter their name. When the user inputs their name, the game will begin. The user will be presented with a blank line for each letter in the word.
+
+The user will then be prompted to enter a letter. If the letter is in the word, the letter will be displayed in the correct position. If the letter is not in the word, the letter will be displayed in the incorrect letters section and the hangman will be drawn one step closer to being hanged.
+
+---
 
 This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
 
