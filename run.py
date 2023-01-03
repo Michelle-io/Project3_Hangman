@@ -61,3 +61,16 @@ game_word = get_random_word()
 game_over = False
 
 
+def play_again():
+    """ Ask player if they want to play again"""
+
+    user_input = input('Do you want to play again? (y/n) ')
+    while user_input.lower() not in ('y', 'n'):
+        user_input = input(
+            "Please enter y to play again or n to quit: "
+        )
+
+    if user_input == 'y':
+        return True
+
+
