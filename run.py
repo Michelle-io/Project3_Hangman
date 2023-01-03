@@ -15,3 +15,28 @@ def player_name():
     return user_name
 
 
+def show_game_board(incorrect_guesses, correct_guesses, game_word):
+    """ Display the game board """
+
+    print(HANGMAN_GRAPHIC[len(incorrect_guesses)], '\n')
+    print('Incorrect guesses:', end=' ')
+
+    # Display incorrect guesses
+    for letter in incorrect_guesses:
+        print(letter, end=' ')
+    print()
+
+    # create word space for the letters not yet guessed
+    word_space = '_' * len(game_word)
+
+    # replace the underscores with correctly guessed letters
+    for index, letter in enumerate(game_word):
+        if letter in correct_guesses:
+            word_space = word_space[:index] + letter + word_space[index + 1:]
+
+    # add spaces between each letter of game word
+    for space in word_space:
+        print(space, end=' ')
+    print()
+
+
