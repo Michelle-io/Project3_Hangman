@@ -16,8 +16,35 @@ Hangman Py is based on the classic game of Hangman. The user is first prompted t
 The user will then be prompted to enter a letter. If the letter is in the word, the letter will be displayed in the correct position. If the letter is not in the word, the letter will be displayed in the incorrect letters section and the hangman will be drawn one step closer to being hanged.
 
 ---
+## Features
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+### Existing Features
+
+- The user can enter their name and the game will begin.
+  - A image of the hangman will be displayed along with the number of incorrect guesses remaining based on the size of the random word.
+
+![hangman game mockup](docs/game.png)
+
+- The user can enter a letter to guess the word.
+  - If the letter is in the word, the letter will be displayed in the correct position.
+  - If the letter is not in the word, the letter will be displayed in the incorrect letters section and the hangman will be drawn one step closer to being hanged.
+  
+![hangman game mockup](docs/game-play.png)
+
+- Input validation is in place to ensure that the user enters a single letter.
+  - If the user enters a letter that has already been entered, they will be prompted to enter a different letter.
+  - If the user enters more than one letter, they will be prompted to enter a single letter.
+  - If the user enters a number or special character, they will be prompted to enter a single letter.
+
+![hangman game mockup](docs/game-validate.png)
+
+### Future Features
+
+- Add a leader board to display the top 10 scores with google sheets.
+- Add difficulty levels to the game, easy, medium hard.
+- Add a timer to the game to add an extra challenge.
+
+---
 
 ## Reminders
 
