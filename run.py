@@ -74,3 +74,33 @@ def play_again():
         return True
 
 
+while True:  # Keep playing until the player has won or lost
+
+    show_game_board(incorrect_guesses, correct_guesses, game_word)
+    guess = get_guess(incorrect_guesses + correct_guesses)
+
+    # check if guess is in the game word
+    if guess in game_word:
+        correct_guesses = correct_guesses + guess
+        found_all_letters = True
+
+        # check if all letters have been guessed
+        for i in range(len(game_word)):
+            if game_word[i] not in correct_guesses:
+                found_all_letters = False
+                break
+        # if all letters have been guessed, player wins
+        if found_all_letters:
+            print(f"Well done {player_name} You've won! "
+                  f"The secret word is{game_word}")
+
+            game_over = True
+    # if guess is not in the game word, add to incorrect guesses
+    else:
+        incorrect_guesses = incorrect_guesses + guess
+
+        # if player has guessed too many times, they lose
+        if len(incorrect_guesses) == len(HANGMAN_GRAPHIC) - 1:
+            show_game_board(incorrect_guesses, correct_guesses, game_word)
+            print("You have run out of guesses!")
+            game_over = True
