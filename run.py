@@ -53,3 +53,11 @@ def get_guess(previous_guesses):
             return guess
 
 
+player_name = player_name()
+print('Hello', player_name, 'Time to play hangman!')
+incorrect_guesses = ''
+correct_guesses = ''
+game_word = get_random_word()
+game_over = False
+
+
