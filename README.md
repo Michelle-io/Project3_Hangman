@@ -1,4 +1,13 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Hangman-PY
+
+Hangman Py is a Python terminal game that utilizes Code Institute mock terminal on Heroku.
+
+Users can compete against the hangman and try to guess the correct word before it's to late!.
+
+
+[Visit the live site](https://hangman-py-ci.herokuapp.com/)
+
+![hangman game mockup](docs/mockup.png)
 
 Welcome USER_NAME,
 
