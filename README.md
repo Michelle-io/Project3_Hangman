@@ -45,16 +45,15 @@ The user will then be prompted to enter a letter. If the letter is in the word, 
 - Add a timer to the game to add an extra challenge.
 
 ---
+## Testing
 
-## Reminders
+- I manually tested the game to ensure that the game logic was working correctly. I also tested the input validation to ensure that the user was only able to enter a single letter.
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+- Passed the code through the [PEP8 online validator](https://pep8ci.herokuapp.com/) to ensure that the code was PEP8 compliant. The hangman graphic failed.
 
-## Creating the Heroku app
+![pep8 validator](docs/pep8.png)
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+---
 
 1. `heroku/python`
 2. `heroku/nodejs`
