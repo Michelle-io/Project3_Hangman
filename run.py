@@ -104,3 +104,15 @@ while True:  # Keep playing until the player has won or lost
             show_game_board(incorrect_guesses, correct_guesses, game_word)
             print("You have run out of guesses!")
             game_over = True
+
+    if game_over:
+        # ask player if they want to play again
+        # if yes, reset game
+        if play_again():
+            incorrect_guesses = ''
+            correct_guesses = ''
+            game_over = False
+            game_word = get_random_word()
+        else:
+            print('Thanks for playing!')
+            break
